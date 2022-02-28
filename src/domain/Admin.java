@@ -8,6 +8,12 @@ public class Admin extends Korisnik{
 		super(ime, prezime, username, password);
 		this.role = role;
 	}
+	
+	public Role getRole() {
+		return role;
+	}
+
+
 
 	public static Admin newAdmin(String ime, String prezime, String username, String password, Role role) {
 		return new Admin(ime,prezime,username,password,role);

@@ -7,6 +7,10 @@ public enum Role {
 	
 	public final String role;
 	
+	public String value() {
+		return role;
+	}
+	
 	private Role(String role) {
 		this.role = role;
 	}
